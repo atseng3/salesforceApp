@@ -11,7 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131118212028) do
+ActiveRecord::Schema.define(:version => 20131118225950) do
+
+  create_table "coupons", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "deal_id",    :null => false
+    t.string   "place",      :null => false
+    t.string   "address",    :null => false
+    t.integer  "zip",        :null => false
+    t.string   "deal_title", :null => false
+    t.string   "deal_info",  :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "coupons", ["user_id"], :name => "index_coupons_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
