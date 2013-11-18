@@ -1,0 +1,17 @@
+ <div data-role="header">
+  <h1>Users</h1>
+</div>
+<div data-role="content">
+  <ul data-role="listview">
+  <% @users.each do |user| %>
+    <li>
+    <%= link_to user do %>
+      <h2><%= user.email %></h2>
+    <% end %>
+    </li>
+  <% end %>
+  </ul>
+</div>
+<div data-role="footer">
+  <%= link_to 'New user', new_user_registration_url %>
+</div>
