@@ -149,6 +149,7 @@ DEPENDENCIES
   backbone-on-rails
   coffee-rails (~> 3.2.1)
   devise
+  ejs
   jquery-rails
   jquery_mobile_rails
   mobylette

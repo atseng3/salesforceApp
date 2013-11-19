@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.mobile.min
+//= require jquery.hammer
 //= require underscore
 //= require backbone
 //= require salesforce_app

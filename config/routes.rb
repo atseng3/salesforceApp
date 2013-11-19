@@ -1,6 +1,7 @@
 SalesforceApp::Application.routes.draw do
   resources :users, :only => [:index]
   devise_for :users
+  root to: 'roots#root'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
