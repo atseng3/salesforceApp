@@ -13,7 +13,7 @@ window.SalesforceApp = {
 
 $(document).ready(function(){
   SalesforceApp.initialize();
-	$('#contentID').hammer().on("tap", ".nested_el", function(event) {
-	        alert(this, event);
+	$('#contentID').hammer().on("tap", function(event) {
+	        alert(this);
 	    });
 });

@@ -2,7 +2,7 @@ SalesforceApp.Views.NewIndexView = Backbone.View.extend({
 	template: JST['index'],
 	
 	events: {
-		'tap': 'onSwipe',
+		'swipe': 'onSwipe',
 		"click .button": "asdf"
 	},
 	
@@ -11,9 +11,9 @@ SalesforceApp.Views.NewIndexView = Backbone.View.extend({
 		alert("abcd");
 	},
 
-	// onSwipe: function(e){
-	//     alert(e.direction); // left or right
-	// },
+	onSwipe: function(e){
+	    alert(e.direction); // left or right
+	},
 	
 	render: function(){
 		var renderedContent = this.template({});
