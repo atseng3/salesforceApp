@@ -4,10 +4,16 @@ window.SalesforceApp = {
   Views: {},
   Routers: {},
   initialize: function() {
-    alert('Hello from Backbone!');
+		
+		// Baconbnb.pads = new Baconbnb.Collections.Pads(parsed_pads.pads, { parse: true });
+    new SalesforceApp.AppRouter();
+		Backbone.history.start();
   }
 };
 
 $(document).ready(function(){
   SalesforceApp.initialize();
+	$('#contentID').hammer().on("tap", function(event) {
+	        alert(this);
+	    });
 });
