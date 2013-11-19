@@ -7,4 +7,7 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
+  attr_accessor :saved_coupons
+  
+  has_many :saved_coupons, :class => "Coupon", :foreign_key => :user_id
 end

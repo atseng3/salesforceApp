@@ -1,5 +1,10 @@
 SalesforceApp::Application.routes.draw do
-  resources :users, :only => [:index]
+  resources :users, :only => [:index] do
+    resources :coupons, :only => [:create, :destroy]
+  end
+  
+  resources :coupons, :only => [:index]
+  
   devise_for :users
 
   # The priority is based upon order of creation:

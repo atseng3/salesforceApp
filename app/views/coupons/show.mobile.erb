@@ -1,0 +1,15 @@
+<div data-role="content">
+  <div class="coupon-img">
+    <img src="<%= coupon.picture %>">
+  </div>
+</div>
+<div data-role="footer">
+  <!-- get coupon -->
+  <div data-role="button">
+    <%= link_to 'Get Coupon', '#' %>
+  </div>
+  <!-- save coupon -->
+  <div data-role="button">
+    <%= link_to 'Save', user_coupons_url %>
+  </div>
+</div>
