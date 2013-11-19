@@ -24,6 +24,8 @@ gem 'jquery-rails'
 gem 'paperclip'
 gem 'aws-sdk'
 gem 'ejs'
+gem 'figaro'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -41,5 +43,3 @@ gem 'ejs'
 # gem 'debugger'
 gem 'devise'
 gem 'backbone-on-rails'
-gem 'mobylette'
-gem 'jquery_mobile_rails'
